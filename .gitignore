@@ -9,3 +9,11 @@ wtmi/build/*
 ddr_static.txt
 autoconf.h
 
+#ignore *.d
+ddr/wtmi_ddr/*.d
+ddr/wtmi_ddr/ddrcore/*.d
+wtmi/*.d
+
+#ignore ddr/tim_ddr/clocks_ddr.txt
+ddr/tim_ddr/clocks_ddr.txt
+
