@@ -1,18 +1,49 @@
-# A3700-utils-marvell
+A3700-utils-marvell for ESPRESSObin
+===================================
 
-The A3700-utils software is provided under a BSD-3-Clause license
+This branch of A3700-utils-marvell is for ESPRESSObin board and it is based on
+[A3700-utils-marvell][A3700-utils-marvell] branch
+[A3700\_utils-armada-17.10][A3700_utils-armada-17.10].
 
-Copyright (c) 2018, Marvell International Ltd. Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+We only provide the build steps and some notes. You can find documentation at
+the most recent release of [A3700-utils-marvell][A3700-utils-marvell].
 
-* Redistributions of source code must retain the above copyright notice,
-  this list of conditions and the following disclaimer.
+******
 
-* Redistributions in binary form must reproduce the above copyright
-  notice, this list of conditions and the following disclaimer in the
-  documentation and/or other materials provided with the distribution.
+Brief
+=====
 
-* Neither the name of Marvell nor the names of its contributors may be
-  used to endorse or promote products derived from this software without
-  specific prior written permission.
-  
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+[A3700-utils-marvell][A3700-utils-marvell] is a collection of DDR topology
+config file and other image flash tools for marvell armada SoCs. It must use
+with [ATF][ATF] together.
+
+This branch must use with [Marvell ATF-ch][Marvell ATF-ch] branch
+[atf-v1.3-armada-17.10-ch-dev][atf-v1.3-armada-17.10-ch-dev], any other
+combination has tested failed. To reduce workload, we did not fix the
+compatibility between different branches of [ATF][ATF] and
+[A3700-utils-marvell][A3700-utils-marvell].
+
+Flash tools
+-----------
+
+This branch have tools to flash a UART image into ESPRESSObin board, the flash
+step by step instruction can be find [here][Bootloader recovery via UART].
+
+TODO
+====
+
+******
+
+*Copyright (C) 2018, Hunan ChenHan Information Technology Co., Ltd. All rights reserved.*
+
+
+[A3700-utils-marvell]: https://github.com/MarvellEmbeddedProcessors/A3700-utils-marvell "A3700-utils-marvell"
+[A3700_utils-armada-17.10]: https://github.com/MarvellEmbeddedProcessors/A3700-utils-marvell/tree/A3700_utils-armada-17.10
+
+[Marvell ATF-ch]: https://github.com/chenhaninformation/arm-trusted-firmware
+[atf-v1.3-armada-17.10-ch-dev]: https://github.com/chenhaninformation/arm-trusted-firmware/tree/atf-v1.3-armada-17.10-ch-dev
+
+[ATF]: ://github.com/ARM-software/arm-trusted-firmware "ATF ARM-Trusted-Firmware"
+
+[Bootloader recovery via UART]: http://wiki.espressobin.net/tiki-index.php?page=Bootloader+recovery+via+UART#Linux
+
